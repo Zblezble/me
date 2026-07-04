@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Novak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.6;
+        }
+
+        main {
+            text-align: center;
+            padding: 2rem;
+            max-width: 480px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #666;
+            margin-bottom: 2.5rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.25rem;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        a:hover {
+            color: #555;
+            border-color: #555;
+        }
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>David Novak</h1>
+        <p>Doing science.</p>
+        <nav class="links">
+            <a href="https://github.com/Zblezble/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                GitHub
+            </a>
+            <a href="https://orcid.org/0000-0003-0500-8071" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm4.5 18h-1.8v-6.75c0-.45-.03-.975-.09-1.575h1.71l.09 1.035h.03c.465-.78 1.275-1.2 2.265-1.2.165 0 .315.015.435.03v1.74h-.255c-1.14 0-1.875.615-2.085 1.65V18zM7.5 5.625h1.875V18H7.5V5.625zm3.15 0h1.875V18H10.65V5.625z"/>
+                </svg>
+                ORCID
+            </a>
+            <a href="https://www.researchgate.net/profile/David-Novak-12" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M19.586 0c-.818 0-1.508.19-2.073.568-.564.378-.846.958-.846 1.74v14.6c0 .62.127 1.137.383 1.554.256.417.603.737 1.043.959.44.222.947.333 1.52.333.906 0 1.62-.254 2.142-.762.521-.508.782-1.18.782-2.016V2.308c0-.782-.282-1.362-.846-1.74C21.127.19 20.437 0 19.586 0zM9.955 0c-1.54 0-2.89.348-4.05 1.044-1.16.696-2.058 1.678-2.694 2.946C2.576 5.258 2.258 6.7 2.258 8.316c0 1.615.328 3.057.985 4.325.656 1.268 1.57 2.26 2.74 2.977 1.17.716 2.52 1.074 4.05 1.074 1.28 0 2.42-.264 3.42-.792l.368 3.864h3.654L16.55 6.39c.04-1.22-.315-2.195-1.065-2.925-.75-.73-1.785-1.095-3.105-1.095-1.1 0-2.01.275-2.73.825-.72.55-1.16 1.305-1.32 2.265h3.24c.18-.42.48-.75.9-.99.42-.24.91-.36 1.47-.36.66 0 1.17.19 1.53.57.36.38.51.93.45 1.65l-.51 5.445c-.9.54-1.98.81-3.24.81-1.06 0-1.98-.27-2.76-.81-.78-.54-1.38-1.275-1.8-2.205-.42-.93-.63-1.98-.63-3.15 0-1.2.21-2.28.63-3.24.42-.96 1.02-1.71 1.8-2.25.78-.54 1.7-.81 2.76-.81 1.02 0 1.89.255 2.61.765.72.51 1.14 1.2 1.26 2.07h3.72c-.18-1.74-.915-3.105-2.205-4.095C13.565.495 11.935 0 9.955 0z"/>
+                </svg>
+                ResearchGate
+            </a>
+        </nav>
+    </main>
+</body>
+</html>
